@@ -103,9 +103,9 @@ include("config.php");
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Judul</th>
                     <th>Kategori</th>
                     <th>No. ISBN</th>
+                    <th>Judul</th>
                     <th>Pengarang</th>
                     <th>Penerbit</th>
                     <th>Tahun Terbit</th>
@@ -121,12 +121,12 @@ include("config.php");
                 while ($buku = mysqli_fetch_array($query)) {
                     echo "<tr>";
                     echo "<td>".$no."</td>";
-                    echo "<td>".$buku['judul']."</td>";
                     echo "<td>".$buku['kategori']."</td>";
                     echo "<td>".$buku['no_isbn']."</td>";
+                    echo "<td>".$buku['judul_buku']."</td>";
                     echo "<td>".$buku['pengarang']."</td>";
-                    echo "<td>".$buku['penerbit']."</td>";
                     echo "<td>".$buku['tahun_terbit']."</td>";
+                    echo "<td>".$buku['penerbit']."</td>";
                     echo "<td>";
                     echo "<div class='d-flex justify-content-left'>";
                     echo "<a href='form-edit.php?id=".$buku['id']."' class='btn btn-edit me-2'>Edit</a>";

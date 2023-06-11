@@ -23,7 +23,7 @@
         }
 
         .form-control {
-            background-color: #FCE4EC;
+            background-color: #fff;
         }
 
         .form-label {
@@ -38,11 +38,7 @@
     <div class="container">
         <form action="proses-tambah.php" method="post">
             <fieldset>
-                <div class="mb-3">
-                    <label for="judul" class="form-label mt-5">Judul Buku</label>
-                    <input type="text" name="judul" class="form-control" placeholder="Judul buku...">
-                </div>
-                <div class="mb-3">
+            <div class="mb-3">
                     <label for="kategori" class="form-label mt-3">Kategori Buku</label>
                     <input type="text" name="kategori" class="form-control" placeholder="Kategori buku...">
                 </div>
@@ -51,16 +47,20 @@
                     <input type="number" name="no_isbn" class="form-control" placeholder="NO. ISBN buku...">
                 </div>
                 <div class="mb-3">
+                    <label for="judul_buku" class="form-label mt-5">Judul Buku</label>
+                    <input type="text" name="judul_buku" class="form-control" placeholder="Judul buku...">
+                </div>
+                <div class="mb-3">
                     <label for="pengarang" class="form-label">Pengarang</label>
                     <input type="text" name="pengarang" class="form-control" placeholder="Pengarang buku...">
                 </div>
                 <div class="mb-3">
-                    <label for="penerbit" class="form-label mt-3">Penerbit Buku</label>
-                    <input type="text" name="penerbit" class="form-control" placeholder="Penerbit buku...">
-                </div>
-                <div class="mb-3">
                     <label for="tahun_terbit" class="form-label mt-3">Tahun terbit Buku</label>
                     <input type="number" name="tahun_terbit" class="form-control" placeholder="Tahun terbit buku...">
+                </div>
+                <div class="mb-3">
+                    <label for="penerbit" class="form-label mt-3">Penerbit Buku</label>
+                    <input type="text" name="penerbit" class="form-control" placeholder="Penerbit buku...">
                 </div>
                 <input type="submit" name="daftar" value="Daftar" class="btn btn-primary">
                 </div>
